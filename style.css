@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #008080; /* Warna hijau latar */
+  font-family: 'Poppins' sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.container {
+  padding: 10px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.nomor,
+.alamat {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.sambutan {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* Style dasar menu */
+    .menu {
+      position: relative;
+      display: inline-block;
+    }
+
+    .menu a {
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+      background-color: #29a0b1;
+      color: white;
+    }
+
+    /* Sembunyikan submenu awalnya */
+    .submenu {
+      border-radius: 8px;
+      display: none;
+      position: absolute;
+      background-color: #98d7c2;
+      min-width: 150px;
+      z-index: 1;
+    }
+
+    .submenu a {
+      border-radius:8px;
+      background-color: #98d7c2;
+    }
+
+    /* Tampilkan submenu saat hover */
+    .menu:hover .submenu {
+      display: block;
+    }
+    
+    .persyaratan {
+      text-align: left;
+      background-color: #78b9b5;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    
+    .angsuran {
+      background-color: white;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    
+    .angsuran img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Tombol awalnya disembunyikan */
+    #tombolAtas {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #29a0b1;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    #tombolAtas:hover {
+      background-color: #29a0b1;
+    }
+    
+    .cek {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 4vw;
+      background-color: #29a0b1;
+      border-radius: 8px;
+    }
+    .petugas {
+      background-color:#78b9b5;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .petugas img {
+      max-width: 50%;
+    }
+    
+    .alamat {
+      background-color:#78b9b5;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .alamat img {
+      max-width: 90%;
+    }
