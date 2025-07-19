@@ -70,6 +70,7 @@ h1 {
     }
     
     .persyaratan {
+      justify-content: space-around;
       text-align: left;
       background-color: #78b9b5;
       margin: 20px;
