@@ -2,39 +2,190 @@ body {
   margin: 0;
   padding: 0;
   background-color: #008080; /* Warna hijau latar */
-  font-family: 'Poppins' sans-serif;
+  font-family: sans-serif;
   text-align: center;
   color: #fff;
+  
+}
+@font-face {
+  font-family: 'MyFont';
+  src: url('font/MyFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'myfont2';
+  src: url('font/myfont2.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .container {
-  padding: 10px;
+  background-image: url('gambar/bghero.jpg');
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-position-y: 100px;
+      padding: 0px;
+      margin: 0px;
 }
 
 .logo {
   width: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 h1 {
-  font-size: 30px;
+  font-family: 'MyFont', sans-serif;
+  font-size: 7vmin;
   font-weight: bold;
   text-decoration: underline;
-  margin-bottom: 10px;
+  color: #58A0C8;
+  margin: 0px;
+  padding: 0px;
+  text-shadow: 
+  -2px 2px 0 black;
 }
 
-.nomor,
-.alamat {
-  font-size: 13px;
+.nomor {
+  font-family: 'MyFont', sans-serif;
+  font-size: 10px;
   font-weight: bold;
-  margin: 4px 0;
+  text-shadow: 
+  -2px 2px 0 black;
 }
 
-.sambutan {
-  margin-top: 30px;
-  font-size: 18px;
-  font-weight: bold;
+#sambutan {
+  font-family: 'myfont2', Sans-Serif;
+  margin : 0px;
+  font-size: 10px;
+  padding: 5px;
+  margin: 5px;
+  color: #FFFADC;
+  text-shadow: 
+  -2px 2px 0 black;
 }
+/* Style dasar menu */
+    .menu {
+      position: relative;
+      display: inline-block;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+      background-color: #29a0b1;
+      color: white;
+    }
+
+    /* Sembunyikan submenu awalnya */
+    .submenu {
+      border-radius: 8px;
+      display: none;
+      position: absolute;
+      background-color: #98d7c2;
+      min-width: 150px;
+      z-index: 1;
+    }
+
+    .submenu a {
+      border-radius:8px;
+      background-color: #98d7c2;
+    }
+
+    /* Tampilkan submenu saat hover */
+    .menu:hover .submenu {
+      display: block;
+    }
+    
+    .persyaratan {
+      justify-content: space-around;
+      text-align: left;
+      background-color: #78b9b5;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    
+    .angsuran {
+      background-color: white;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    
+    .angsuran img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Tombol awalnya disembunyikan */
+    #tombolAtas {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #29a0b1;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    #tombolAtas:hover {
+      background-color: #29a0b1;
+    }
+    
+    .cek {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 4vw;
+      background-color: #29a0b1;
+      border-radius: 8px;
+      padding: 0px;
+      margin: 0px;
+    }
+    .petugas {
+      background-color:#78b9b5;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .petugas a {
+      color: white;
+      text-decoration: none;
+    }
+    .petugas img {
+      max-width: 50%;
+    }
+    
+    .alamat {
+      background-color:#78b9b5;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .alamat img {
+      max-width: 90%;
+    }
+    .alamat a {
+      color: white;
+      text-decoration: none;
+    }}
 /* Style dasar menu */
     .menu {
       position: relative;
