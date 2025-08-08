@@ -295,3 +295,125 @@ h1 {
     .alamat img {
       max-width: 90%;
     }
+
+/* Tombol awalnya disembunyikan */
+    #tombolAtas {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #29a0b1;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    #tombolAtas:hover {
+      background-color: #29a0b1;
+    }
+    
+    .cek {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 4vw;
+      background-color: #29a0b1;
+      border-radius: 8px;
+      padding: 0px;
+      margin: 0px;
+    }
+    .petugas {
+      background-color:#78b9b5;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .petugas a {
+      color: white;
+      text-decoration: none;
+    }
+    .petugas img {
+      max-width: 50%;
+    }
+    
+    .alamat {
+      background-color:#78b9b5;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .alamat img {
+      max-width: 90%;
+    }
+    .alamat a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    /* Background overlay */
+#location-alert-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Alert box */
+#location-alert {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 360px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+    animation: popIn 0.3s ease;
+    border: 5px solid #0a7b32;
+}
+
+/* Judul alert */
+#location-alert h2 {
+    color: #0a7b32;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Pesan alert */
+#location-alert p {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Tombol */
+#location-alert button {
+    background: #0a7b32;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+#location-alert button:hover {
+    background: #095b27;
+}
+
+/* Animasi pop in */
+@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
