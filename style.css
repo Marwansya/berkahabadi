@@ -29,7 +29,7 @@ body {
       background-position-y: 100px;
       padding: 0px;
       margin: 0px;
-      box-shadow: 0 150px 50px -20px rgba(0,130,130,0.5) inset;
+      box-shadow: 0 160px 50px -20px rgba(0,130,130,1) inset;
 }
 
 .logo {
