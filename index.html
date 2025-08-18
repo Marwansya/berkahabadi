@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KSP BERKAH ABADI TUNGGAL</title>
   <script src="java.js"></script>
   <link rel="stylesheet" href="style.css" />
@@ -135,37 +135,46 @@
   <div class="petugas" id="karlos">  
    <img src="gambar/karlos.png" alt="Karlos" />
    <h2>Karlos</h2>
-  <p>Nomer : <a href="https://wa.me/6281210532129?text=Halo%20saya%20ingin%20mengajukan%20pinjaman%20apa%20saja%20yang%20harus%20saya%20siapkan">0812-1053-2129</a></p>
+  <p>Nomer : <a href="https://wa.me/6281210532129?text=Halo%20saya%20ingin%20mengajukan%20pinjaman%20apa%20saja%20yang%20harus%20saya%20siapkan" target="_blank">0812-1053-2129</a></p>
    <img src="gambar/karlosqr.png" alt="Karlos" />
   </div>
   
   <div class="petugas" id="wawan">  
    <img src="gambar/wawan.png" alt="Marwansya" />
    <h2>Marwansya</h2>
-  <p>Nomer : <a href="https://wa.me/6281394496107?text=Halo%20saya%20ingin%20mengajukan%20pinjaman%20apa%20saja%20yang%20harus%20saya%20siapkan" >0813-9449-6107</a></p>
+  <p>Nomer : <a href="https://wa.me/6281394496107?text=Halo%20saya%20ingin%20mengajukan%20pinjaman%20apa%20saja%20yang%20harus%20saya%20siapkan" target="_blank">0813-9449-6107</a></p>
    <img src="gambar/wawanqr.png" alt="Marwansya" />
   </div>
   
   <div class="petugas" id="ansel">  
    <img src="gambar/ansel.png" alt="Ansel" />
    <h2>Ansel</h2>
-  <p>Nomer : <a href="https://wa.me/6281245439536?text=Halo%20saya%20ingin%20mengajukan%20pinjaman%20apa%20saja%20yang%20harus%20saya%20siapkan" >0812-4543-9536</a></p>
+  <p>Nomer : <a href="https://wa.me/6281245439536?text=Halo%20saya%20ingin%20mengajukan%20pinjaman%20apa%20saja%20yang%20harus%20saya%20siapkan" target="_blank">0812-4543-9536</a></p>
    <img src="gambar/anselqr.png" alt="ansel" />
   </div>
   
   <div class="petugas" id="abdul">  
    <img src="gambar/della.png" alt="Abdul" />
    <h2>Abdul</h2>
-  <p>Nomer : <a href="https://wa.me/6282238712158?text=Halo%20saya%20ingin%20mengajukan%20pinjaman%20apa%20saja%20yang%20harus%20saya%20siapkan" >0822-3871-2158</a></p>
+  <p>Nomer : <a href="https://wa.me/6282238712158?text=Halo%20saya%20ingin%20mengajukan%20pinjaman%20apa%20saja%20yang%20harus%20saya%20siapkan" target="_blank">0822-3871-2158</a></p>
    <img src="gambar/dellaqr.png" alt="Abdul" />
   </div>
   
   <div class="alamat" id="alamat">
   <p class="alamat">Alamat  : Jl. Frans Kaisepo Kelapa Dua, <br /> SERUI - PAPUA</p>
-  <a href="https://maps.app.goo.gl/ztwhdhDdFgRqmqzn9?g_st=ac" >Lihat di Google Maps<br/><br/><img src="gambar/map1.jpg"><br/><br/>
+  <a href="https://maps.app.goo.gl/ztwhdhDdFgRqmqzn9?g_st=ac" target="_blank">Lihat di Google Maps<br/><img src="gambar/map1.jpg"></a><br/><br/>
   <img src="gambar/map2.jpg"><br/><br/>
-  <img src="gambar/map3.jpg"></a>
+  <img src="gambar/map3.jpg">
   </div>
+  
+  <!-- Floating Button -->
+<div class="floating-container" id="floatingContainer">
+  <div class="floating-btn" id="floatingBtn">DOWNLOAD</div>
+  <div class="floating-content" id="floatingContent">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/Marwansya/berkahabadi/releases/download/v1.0/berkahabadi.apk" alt="QR Code Download Berkah Abadi">
+    <a href="https://github.com/Marwansya/berkahabadi/releases/download/v1.0/berkahabadi.apk"><button class="inner-download-btn">Download</button></a>
+  </div>
+</div>
   
   <a href="#atas" id="tombolAtas">Kembali Ke Atas</a>
 <!-- Script untuk menampilkan tombol saat scroll -->
@@ -178,6 +187,15 @@
         tombol.style.display = "none";
       }
     };
+    
+const btn = document.getElementById('floatingBtn');
+  const container = document.getElementById('floatingContainer');
+
+  btn.addEventListener('click', () => {
+    container.classList.toggle('open');
+    btn.classList.toggle('open');
+    btn.textContent = container.classList.contains('open') ? 'TUTUP' : 'DOWNLOAD';
+  });
   </script>
 <div class="footer">
   &copy; 2025 - Marwansyah. All rights reserved.
