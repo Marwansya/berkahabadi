@@ -32,3 +32,22 @@ if (navigator.geolocation) {
         console.log("Tidak bisa mendapatkan lokasi:", error);
     });
 };
+
+// Deteksi WebView Android
+const isAndroidWebView = /wv|Android.*Version\/[\d.]+/.test(navigator.userAgent);
+
+// Deteksi WebView iOS
+const isIOSWebView = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent);
+
+window.addEventListener("DOMContentLoaded", function () {
+  const floatingContainer = document.getElementById("floatingContainer");
+  if (!floatingContainer) return; // kalau ID tidak ditemukan, skip
+
+  if (isAndroidWebView || isIOSWebView) {
+    // Jika WebView → sembunyikan tombol
+    floatingContainer.style.display = "none";
+  } else {
+    // Jika browser biasa → tampilkan
+    floatingContainer.style.display = "block";
+  }
+});
