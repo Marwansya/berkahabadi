@@ -3,7 +3,7 @@ const centerLat = -1.8703;
 const centerLng = 136.2318;
 
 // Radius (km) meliputi semua pulau kecil di Kepulauan Yapen
-const maxRadius = 55;
+const maxRadius = 1;
 
 // Fungsi hitung jarak
 function getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2) {
@@ -31,4 +31,4 @@ if (navigator.geolocation) {
     }, error => {
         console.log("Tidak bisa mendapatkan lokasi:", error);
     });
-}
+};
